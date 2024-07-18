@@ -13,4 +13,6 @@ RSpec.describe "Items Index" do
       visit items_path
     end
   end
+
+  
 end

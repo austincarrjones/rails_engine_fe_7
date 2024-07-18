@@ -1,0 +1,20 @@
+<h1> Search </h1>
+
+<%= form_with url: search_path, method: :get, local: true do |f| %>
+  <%= f.label :search %>
+  <%= f.text_field :search %>
+  <%= f.submit "Search" %>
+<% end %>
+
+<% if @search_results %>
+  <%= @search_results.name %>
+<% end %>
+
+
+<%# <% if @search_results %>
+  <%# <% @merchants.each do |merchant| %>
+    <ul>
+      <%# <li><%= link_to "#{merchant.name}", merchant_path(id: merchant.id) %></li> 
+    </ul>
+  <%# <% end %> 
+<%# <% end %> 
